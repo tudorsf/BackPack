@@ -1,0 +1,15 @@
+C:\Users\Tudor\Desktop\BackPack\BackPack\bin\Debug\net6.0\BackPack.exe
+C:\Users\Tudor\Desktop\BackPack\BackPack\bin\Debug\net6.0\BackPack.deps.json
+C:\Users\Tudor\Desktop\BackPack\BackPack\bin\Debug\net6.0\BackPack.runtimeconfig.json
+C:\Users\Tudor\Desktop\BackPack\BackPack\bin\Debug\net6.0\BackPack.dll
+C:\Users\Tudor\Desktop\BackPack\BackPack\bin\Debug\net6.0\BackPack.pdb
+C:\Users\Tudor\Desktop\BackPack\BackPack\obj\Debug\net6.0\BackPack.csproj.AssemblyReference.cache
+C:\Users\Tudor\Desktop\BackPack\BackPack\obj\Debug\net6.0\BackPack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tudor\Desktop\BackPack\BackPack\obj\Debug\net6.0\BackPack.AssemblyInfoInputs.cache
+C:\Users\Tudor\Desktop\BackPack\BackPack\obj\Debug\net6.0\BackPack.AssemblyInfo.cs
+C:\Users\Tudor\Desktop\BackPack\BackPack\obj\Debug\net6.0\BackPack.csproj.CoreCompileInputs.cache
+C:\Users\Tudor\Desktop\BackPack\BackPack\obj\Debug\net6.0\BackPack.dll
+C:\Users\Tudor\Desktop\BackPack\BackPack\obj\Debug\net6.0\refint\BackPack.dll
+C:\Users\Tudor\Desktop\BackPack\BackPack\obj\Debug\net6.0\BackPack.pdb
+C:\Users\Tudor\Desktop\BackPack\BackPack\obj\Debug\net6.0\BackPack.genruntimeconfig.cache
+C:\Users\Tudor\Desktop\BackPack\BackPack\obj\Debug\net6.0\ref\BackPack.dll
