@@ -91,7 +91,7 @@ public class Program
                     }
                     break;
                 case "franghie":
-                    if (ghiozdan.Adauga(sageata))
+                    if (ghiozdan.Adauga(franghie))
                     {
                         Console.WriteLine("obiect adaugat");
                         Console.WriteLine("Elemente Ramase:");
