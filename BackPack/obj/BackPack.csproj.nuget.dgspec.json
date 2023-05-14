@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tudor\\Desktop\\BackPack\\BackPack\\BackPack.csproj": {}
+    "C:\\Users\\Tudor\\Source\\Repos\\BackPack\\BackPack\\BackPack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tudor\\Desktop\\BackPack\\BackPack\\BackPack.csproj": {
+    "C:\\Users\\Tudor\\Source\\Repos\\BackPack\\BackPack\\BackPack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tudor\\Desktop\\BackPack\\BackPack\\BackPack.csproj",
+        "projectUniqueName": "C:\\Users\\Tudor\\Source\\Repos\\BackPack\\BackPack\\BackPack.csproj",
         "projectName": "BackPack",
-        "projectPath": "C:\\Users\\Tudor\\Desktop\\BackPack\\BackPack\\BackPack.csproj",
+        "projectPath": "C:\\Users\\Tudor\\Source\\Repos\\BackPack\\BackPack\\BackPack.csproj",
         "packagesPath": "C:\\Users\\Tudor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tudor\\Desktop\\BackPack\\BackPack\\obj\\",
+        "outputPath": "C:\\Users\\Tudor\\Source\\Repos\\BackPack\\BackPack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tudor\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BackPack
 {
-    public class Sageata : ArticolInventar
+    public class Sageata : Inventory
     {
         public Sageata() : base(0.1, 0.05) { }
     }

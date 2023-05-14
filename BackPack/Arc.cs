@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BackPack
 {
-    public class Arc : ArticolInventar
+    public class Arc : Inventory
     {   
         public Arc(): base(1, 4) { }
     }

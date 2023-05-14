@@ -4,52 +4,52 @@ public class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Configureaza ghiozdanul");  
-        Console.WriteLine("NrTotalElemente:");
-        var nrTotalElemente = Console.ReadLine();
-        Console.WriteLine("Greutate Totala: ");
-        var greutateTotala = Console.ReadLine();
-        Console.WriteLine("Volum Total: ");
-        var volumTotal = Console.ReadLine();
+        Console.WriteLine("Configure backpack");  
+        Console.WriteLine("Total Elements:");
+        var totalElements = Console.ReadLine();
+        Console.WriteLine("Total Weight: ");
+        var totalWeight = Console.ReadLine();
+        Console.WriteLine("Total Volume: ");
+        var totalVolume = Console.ReadLine();
 
-        var ghiozdan = new Ghiozdan(Convert.ToUInt16(nrTotalElemente), Convert.ToDouble(greutateTotala), Convert.ToDouble(volumTotal));
-        ghiozdan.Articole = new List<ArticolInventar>();
+        var backPack = new BackPack.BackPack(Convert.ToUInt16(totalElements), Convert.ToDouble(totalWeight), Convert.ToDouble(totalVolume));
+        backPack.Articles = new List<Inventory>();
         var arc = new Arc();
-        var sageata = new Sageata();
-        var franghie = new Franghie();
-        var apa = new Apa();
-        var mancare = new Mancare();
-        var sabie = new Sabie();
+        var spear = new Sageata();
+        var rope = new Rope();
+        var water = new Water();
+        var food = new Food();
+        var sword = new Sword();
 
         
-        int elementeRamase()
+        int remainedElements()
         {
-            int elementeRamase = Convert.ToUInt16(nrTotalElemente) - (ghiozdan.Articole.Count());
-            return elementeRamase;
+            int remainedElements = Convert.ToUInt16(totalElements) - (backPack.Articles.Count());
+            return remainedElements;
         }
         
-        double greutateRamasa()
+        double remainedWeight()
         {
-            double greutateRamasa = Convert.ToDouble(greutateTotala) - (ghiozdan.Articole.Sum(x => x.Greutate));
-            return greutateRamasa;
+            double remainedWeight = Convert.ToDouble(totalWeight) - (backPack.Articles.Sum(x => x.Weight));
+            return remainedWeight;
         }
-       double volumRamas()
+       double remainedVolume()
         {
-            double volumRamas = Convert.ToDouble(volumTotal) - (ghiozdan.Articole.Sum(x => x.Volum));
+            double remainedVolume = Convert.ToDouble(totalVolume) - (backPack.Articles.Sum(x => x.Volume));
             
-            return volumRamas;
+            return remainedVolume;
         }
 
        
         Console.WriteLine("Alegeti un Articol");
 
         Console.WriteLine("arc");
-        Console.WriteLine("sageata");
-        Console.WriteLine("franghie");
-        Console.WriteLine("apa");
-        Console.WriteLine("mancare");
-        Console.WriteLine("sabie");
-        Console.WriteLine("goliti ghiozdanul");
+        Console.WriteLine("spear");
+        Console.WriteLine("rope");
+        Console.WriteLine("water");
+        Console.WriteLine("food");
+        Console.WriteLine("sword");
+        Console.WriteLine("empty backpack");
         var showMenu = true;
         while (showMenu)
         {
@@ -58,114 +58,93 @@ public class Program
             switch (key)
             {
                 case "arc":
-                    if (ghiozdan.Adauga(arc))
+                    if (backPack.Add(arc))
                     {
-                        Console.WriteLine("obiect adaugat");
-                        Console.WriteLine("Elemente Ramase:");
-                        Console.WriteLine(elementeRamase());
-                        Console.WriteLine("Volum Ramas:");
-                        Console.WriteLine(volumRamas());
-                        Console.WriteLine("Greutate Ramasa:");
-                        Console.WriteLine(greutateRamasa());
+                        Console.WriteLine("added object");
+                        Console.WriteLine("Remained Elements:" + remainedElements());
+                        Console.WriteLine("Remained volume:" + remainedVolume());
+                        Console.WriteLine("Remained weight:" + remainedWeight());
                     }
                     else
                     {
-                        Console.WriteLine("obiect prea mare/ ghiozdan plin");
+                        Console.WriteLine("article too big/ full backpack");
                         
                     }
                     break;
-                case "sageata":
-                    if (ghiozdan.Adauga(sageata))
+                case "spear":
+                    if (backPack.Add(spear))
                     {
-                        Console.WriteLine("obiect adaugat");
-                        Console.WriteLine("Elemente Ramase:");
-                        Console.WriteLine(elementeRamase());
-                        Console.WriteLine("Volum Ramas:");
-                        Console.WriteLine(volumRamas());
-                        Console.WriteLine("Greutate Ramasa:");
-                        Console.WriteLine(greutateRamasa());
+                        Console.WriteLine("added object");
+                        Console.WriteLine("Remained Elements:" + remainedElements());
+                        Console.WriteLine("Remained volume:" + remainedVolume());
+                        Console.WriteLine("Remained weight:" + remainedWeight());
                     }
                     else
                     {
-                        Console.WriteLine("obiect prea mare/ ghiozdan plin");
+                        Console.WriteLine("article too big/ full backpack");
                     }
                     break;
-                case "franghie":
-                    if (ghiozdan.Adauga(franghie))
+                case "rope":
+                    if (backPack.Add(rope))
                     {
-                        Console.WriteLine("obiect adaugat");
-                        Console.WriteLine("Elemente Ramase:");
-                        Console.WriteLine(elementeRamase());
-                        Console.WriteLine("Volum Ramas:");
-                        Console.WriteLine(volumRamas());
-                        Console.WriteLine("Greutate Ramasa:");
-                        Console.WriteLine(greutateRamasa());
+                        Console.WriteLine("added object");
+                        Console.WriteLine("Remained Elements:" + remainedElements());
+                        Console.WriteLine("Remained volume:" + remainedVolume());
+                        Console.WriteLine("Remained weight:" + remainedWeight());
                     }
                     else
                     {
-                        Console.WriteLine("obiect prea mare/ghiozdan plin");
+                        Console.WriteLine("article too big/ full backpack");
                     }
                     break;
-                case "apa":
-                    if (ghiozdan.Adauga(apa))
+                case "water":
+                    if (backPack.Add(water))
                     {
-                        Console.WriteLine("obiect adaugat");
-                        Console.WriteLine("Elemente Ramase:");
-                        Console.WriteLine(elementeRamase());
-                        Console.WriteLine("Volum Ramas:");
-                        Console.WriteLine(volumRamas());
-                        Console.WriteLine("Greutate Ramasa:");
-                        Console.WriteLine(greutateRamasa());
+                        Console.WriteLine("added object");
+                        Console.WriteLine("Remained Elements:" + remainedElements());
+                        Console.WriteLine("Remained volume:" + remainedVolume());
+                        Console.WriteLine("Remained weight:" + remainedWeight());
                     }
                     else
                     {
-                        Console.WriteLine("obiect prea mare/ ghiozdan plin");
+                        Console.WriteLine("article too big/ full backpack");
                     }
                     break;
-                case "mancare":
-                    if (ghiozdan.Adauga(mancare))
+                case "food":
+                    if (backPack.Add(food))
                     {
-                        Console.WriteLine("obiect adaugat");
-                        Console.WriteLine("Elemente Ramase:");
-                        Console.WriteLine(elementeRamase());
-                        Console.WriteLine("Volum Ramas");
-                        Console.WriteLine(volumRamas());
-                        Console.WriteLine("Greutate Ramasa:");
-                        Console.WriteLine(greutateRamasa());
+                        Console.WriteLine("added object");
+                        Console.WriteLine("Remained Elements:" + remainedElements());
+                        Console.WriteLine("Remained volume:" + remainedVolume());
+                        Console.WriteLine("Remained weight:" + remainedWeight());
                     }
                     else
                     {
-                        Console.WriteLine("obiect prea mare/ ghiozdan plin");
+                        Console.WriteLine("article too big/ full back pack");
                     }
                     break;
-                case "sabie":
-                    if (ghiozdan.Adauga(sabie))
+                case "sword":
+                    if (backPack.Add(sword))
                     {
-                        Console.WriteLine("obiect adaugat");
-                        Console.WriteLine("Elemente Ramase:");
-                        Console.WriteLine(elementeRamase());
-                        Console.WriteLine("Volum Ramas:");
-                        Console.WriteLine(volumRamas());
-                        Console.WriteLine("Greutate Ramasa:");
-                        Console.WriteLine(greutateRamasa());
+                        Console.WriteLine("added object");
+                        Console.WriteLine("Remained Elements:" + remainedElements());
+                        Console.WriteLine("Remained volume:" + remainedVolume());
+                        Console.WriteLine("Remained weight:" + remainedWeight());
                     }
                     else
                     {
-                        Console.WriteLine("obiect prea mare");
+                        Console.WriteLine("article too big/ full back pack");
                     }
                     break;
-                case "goliti ghiozdanul":
-                    ghiozdan.Articole.Clear();
-                    Console.WriteLine("Ghiozdan gol");
-                    Console.WriteLine("Elemente Ramase:");
-                    Console.WriteLine(elementeRamase());
-                    Console.WriteLine("Volum Ramas");
-                    Console.WriteLine(volumRamas());
-                    Console.WriteLine("Greutate Ramasa:");
-                    Console.WriteLine(greutateRamasa());
+                case "empty backpack":
+                    backPack.Articles.Clear();
+                    Console.WriteLine("Empty backpack");
+                    Console.WriteLine("Remained Elements:" + remainedElements());
+                    Console.WriteLine("Remained volume:" + remainedVolume());
+                    Console.WriteLine("Remained weight:" + remainedWeight());
                     break;
                 default:
-                    Console.WriteLine("optiune invalida");
+                    Console.WriteLine("invalid option");
                     showMenu = false;
                     break;
             }
